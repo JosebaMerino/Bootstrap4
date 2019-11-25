@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <!-- Custom css -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Bootstrap4</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+        <a class="navbar-brand" href="/index.html">Indice</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/html/gridsystem.html"> Grid System </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/html/components.html"> Componentes </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/html/utilities.html"> Utilidades </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1> Utilidades </h1>
+        <p>
+            <pre>
+    Leer clearfix y floats del moodle
+    Utilidades:
+        Display (interesante para cambiar el display) (o flex o none)(importante hidding elements - mostrar cosas dependiendo del tamaño)
+        Embed
+        Flex y float
+        image-replacement
+        position
+        shadows
+        sizes
+        spacing
+        streched link - hace que todo sea un enlace
+        text (cosas)
+
+
+            </pre>
+
+        </p>
+        <h2></h2>
+
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/utilities/borders/" target="_blank"> Borders </a>
+            </div>
+            <div class="card-body container">
+                <p class="card-text">Se le pueden poner bordes a los elementos de bootstrap usando la clase <code>border</code></p>
+                <div class="row mb-3">
+                    <div class="border border-dark">
+                        Un simple borde sin colores ni nada
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="border border-dark border-top-0">
+                        Hola no tengo borde superior
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <span class="border py-3 mx-2 border-dark rounded" > Hola pa</span>
+                    <span class="border py-3 mx-2 border-dark rounded-top"> Hola pa</span>
+                    <span class="border py-3 mx-2 border-dark rounded-right"> Hola pa</span>
+                    <span class="border py-3 mx-2 border-dark rounded-bottom"> Hola pa</span>
+                    <span class="border py-3 mx-2 border-dark rounded-left"> Hola pa</span>
+                    <span class="border py-3 mx-2 px-3 border-dark rounded-circle"> Hola pa</span>
+                    <span class="border py-3 px-3 mx-2 border-dark rounded-pill"> Hola pa</span>
+                    <span class="border py-3 mx-2 border-dark rounded-0"> Hola pa</span>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/utilities/colors/" target="_blank" > Colors </a>
+            </div>
+            <div class="card-body container">
+                <p>Bootstrap tiene varios colores por defecto, ahora pondre un ejemplo de los colores para texto</p>
+                <div class="row">
+                    <p class="m-2 text-primary">Lorem, ipsum.</p>
+                    <p class="m-2 text-secondary">Blanditiis, corrupti.</p>
+                    <p class="m-2 text-success">A, alias?</p>
+                    <p class="m-2 text-danger">Reiciendis, tempora.</p>
+                    <p class="m-2 text-warning">Laborum, quae.</p>
+                    <p class="m-2 text-info">Quos, accusamus!</p>
+                    <p class="m-2 text-light bg-dark">Ipsum, corporis!</p>
+                    <p class="m-2 text-dark">Nemo, numquam.</p>
+                    <p class="m-2 text-body">Dolor, iure.</p>
+                    <p class="m-2 text-muted">Repellendus, ullam.</p>
+                    <p class="m-2 text-white bg-dark">Minus, velit.</p>
+                    <p class="m-2 text-black-50">Neque, quia?</p>
+                    <p class="m-2 text-white-50 bg-dark">Iure, numquam.</p>
+                </div>
+                <p> Se pueden aplicar todos y cada uno de las clases anteriores a <code>a</code> anclas.</p>
+                <p> Tambien tiene colores para los <code>background</code>, que son <code>primary, secondary, success, danger, warning, info, light, dark, white y transparent</code></p>
+            
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/utilities/display/" target="_blank"> Display</a>
+            </div>
+            <div class="card-body container">
+                Just and empty card
+            </div>
+        </div>    
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                Empty card
+            </div>
+            <div class="card-body container">
+                Just and empty card
+            </div>
+        </div>    
+    </main>
+    <footer class="bg-primary">
+        <div class="container p-1 p-sm-3 clearfix">
+        <nav>
+                <ul class="d-flex flex-column flex-sm-row justify-content-between p-0">
+                    <li class="text-center"><a href="#">Enlace</a></li>
+                    <li class="text-center"><a href="#">Enlace</a></li>
+                    <li class="text-center"><a href="#">Enlace</a></li>
+                    <li class="text-center"><a href="#">Enlace</a></li>
+                </ul>
+        </nav>
+        <a class="float-right" target="_blank" href="https://github.com/JosebaMerino/Bootstrap4"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+    </footer>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

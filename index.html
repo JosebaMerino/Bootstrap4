@@ -9,14 +9,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Custom css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <!-- Custom css -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Bootstrap4</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top ">
+        <a class="navbar-brand" href="/index.html">Indice</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/html/gridsystem.html"> Grid System </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/html/components.html"> Componentes </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/html/utilities.html"> Utilidades </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="html/gridsystem.html"> Grid</a></li>
+            <li><a href="html/components.html"> componentes</a></li>
+            <li><a href="html/utilities.html"> Utilidades</a></li>
+        </ul>
+    </nav>
 
     <main class="container">
+
         <h1>bootstrap4 pagina ejemplo</h1>
         <h2> grid system</h2>
         <p> Dividimos la fila en tres columnas a partir del breakpoint sm</p>
@@ -45,44 +74,42 @@
             </div>
         </div>
 
-        <h2> Componentes</h2>
 
-            <div class="alert alert-primary" role="alert">
-                    Esto es una alerta de color azul
-            </div>
-            <div class="alert alert-danger" role="alert">
-                    Esto es una alerta de color rojo
-            </div>
-
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
 
             <p> Una que sea grid system, otro enlace para utilidades y otro para componentes</p>
-            badge?
-            breadcrumb?
-            buttons?
-            button group?
-            card?
-            carousel?
-            collapse?
-            dropdown?
-            forms? - Otro dia
-            jumbotron? deprecated??
-            list group?
-            modal?
-            nav & navbar?
-            pagination?
-            popover?
-            tooltip?
-            spinners?
-            toast?
+ 
             <h2> Utilidades </h2>
+            <p> Añadir un pie de pagina para ir a GitHub</p>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Praesentium unde maxime deserunt aut?</p>
+                <p>Totam doloribus veniam maxime magnam.</p>
+                <p>Vitae nam iusto quas eaque.</p>
+                <p>Ducimus, omnis ipsum. Quasi, sunt.</p>
+                <p>Ullam quo architecto dolore recusandae!</p>
+                <p>Repellendus amet nemo maiores ut.</p>
+                <p>Eveniet autem iste sapiente laboriosam.</p>
+                <p>Esse debitis tempora nobis aperiam!</p>
+                <p>Voluptatum rerum quidem nostrum facilis.</p>
+                <p>Optio praesentium esse distinctio eligendi?</p>
+                <p>Eveniet facilis maxime sequi odio!</p>
+                <p>Accusantium fuga minus tempora doloribus.</p>
+                <p>Debitis aperiam corporis vel voluptatem!</p>
+                <p>Maiores reprehenderit modi exercitationem facere.</p>
+                <p>Laborum ut minus quos nemo.</p>
+                <p>Hic enim facilis quis optio!</p>
+                <p>Doloremque quibusdam velit ipsam hic!</p>
+                <p>Veritatis, deserunt porro. Dicta, placeat.</p>
+                <p>Porro fugiat harum saepe sequi?</p>
+            </div>
     </main>
 
+    <footer class="fixed-bottom bg-primary p-1 p-sm-4">
+        <div class="container">
+            <a target="_blank" href="https://github.com/JosebaMerino/Bootstrap4"    ><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
