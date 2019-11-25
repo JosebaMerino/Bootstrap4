@@ -1,46 +1,9 @@
 /**
-    Nuestro fichero de css
+Nuestro fichero de css
 */
 
-h1 {
-    color: teal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-transform: capitalize;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-/*
-footer {
-    position: sticky;
-    bottom: 0;
-}*/ 
-
-footer li {
-    display: inline;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: #ffc107;
-}
-.col, .col-sm {
-    border: 1px solid #333;
-    background-color: rgb(172, 172, 172);
-    padding: 20px;
-}
-
-main:before {
-    content: "Mobile first";
-}
-
+/* Media querys
+****************************************************/
 @media (min-width: 576px) { 
     main:before {
         content: "Small device < 576";
@@ -63,4 +26,49 @@ main:before {
     main:before {
         content: "Extra large device < 1200";
     }
+}
+
+/* Etiquetas
+****************************************************/
+h1 {
+    color: teal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+}
+
+/*
+footer {
+    position: sticky;
+    bottom: 0;
+}*/ 
+
+ul, ol {
+    list-style: none;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+main:before {
+    content: "Mobile first";
+}
+
+/* Clases
+****************************************************/
+
+.col, .col-sm {
+    border: 1px solid #333;
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
 }
