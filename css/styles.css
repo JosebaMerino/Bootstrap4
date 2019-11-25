@@ -1,0 +1,49 @@
+/**
+    Nuestro fichero de css
+*/
+
+h1 {
+    color: teal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+.col, .col-sm {
+    border: 1px solid #333;
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
+}
+
+main:before {
+    content: "Mobile first";
+}
+
+@media (min-width: 576px) { 
+    main:before {
+        content: "Small device < 576";
+    }
+}
+
+@media (min-width: 768px) { 
+    main:before {
+        content: "Medium device < 768";
+    }
+}
+
+@media (min-width: 992px) {
+    main:before {
+        content: "Large device < 992";
+    }
+}
+
+@media (min-width: 1200px) {
+    main:before {
+        content: "Extra large device < 1200";
+    }
+}

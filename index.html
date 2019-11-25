@@ -1,12 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bootstrap4</title>
 </head>
+
 <body>
-    <h1>Bootstrap4</h1>
+
+    <main class="container">
+        <h1>bootstrap4 pagina ejemplo</h1>
+        <h2> grid system</h2>
+        <p> Dividimos la fila en tres columnas a partir del breakpoint sm</p>
+        <p> Inferior a SM la columna ocupa 12 espacios</p>
+        <div class="row" p-2>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+        <p> Dividimos la fila en tres columnas para todos los breakpoints</p>
+        <div class="row">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+
+        <h2> Componentes</h2>
+
+            <div class="alert alert-primary" role="alert">
+                    Esto es una alerta de color azul
+            </div>
+            <div class="alert alert-danger" role="alert">
+                    Esto es una alerta de color rojo
+            </div>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <p> Una que sea grid system, otro enlace para utilidades y otro para componentes</p>
+            badge?
+            breadcrumb?
+            buttons?
+            button group?
+            card?
+            carousel?
+            collapse?
+            dropdown?
+            forms? - Otro dia
+            jumbotron? deprecated??
+            list group?
+            modal?
+            nav & navbar?
+            pagination?
+            popover?
+            tooltip?
+            spinners?
+            toast?
+            <h2> Utilidades </h2>
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
