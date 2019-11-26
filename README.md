@@ -7,4 +7,4 @@ Tenemos varias páginas .html donde probamos diferentes funcionalidades de este 
 - Utilidades
 - Themes
 
-![Alt text](https://github.com/JosebaMerino/Bootstrap4/blob/master/Captura.png)
+![Alt text](https://github.com/JosebaMerino/Bootstrap4/blob/master/Captura.PNG)
