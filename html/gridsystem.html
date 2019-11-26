@@ -16,25 +16,125 @@
 
 <body>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
-        <a class="navbar-brand" href="/index.html">Indice</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Indice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/html/gridsystem.html"> Grid System </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html/components.html"> Componentes </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html/utilities.html"> Utilidades </a>
-            </li>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/html/gridsystem.html"> Grid System </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/components.html"> Componentes </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/utilities.html"> Utilidades </a>
+                    </li>
+                </ul>
+            </div><!-- .collapse .navbar-collapse -->
+        </div> <!-- .container" -->
     </nav>
+
+    <main class="container">
+        <div class="row mb-4">
+            <div class="col">
+                <h1> Grid system</h1>
+                <p>bootstrap funciona con un sistema de grillas a 12 columnas</p>
+                <p>Usa internamente <b>flexbox</b> y es necesario que este dentro de un <code>container</code></p>
+            </div>
+        </div>
+
+        <p> Disponemos de 12 columnas</p>
+        <div class="row">
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+            <div class="col-1"> 1 </div>
+        </div>
+
+        <p> Dividimos la fila en tres columnas a partir del breakpoint sm</p>
+        <p> Inferior a SM la columna ocupa 12 espacios</p>
+        <div class="row" p-2>
+            <div class="col-sm">
+                <span class="d-none d-sm-block"> 4 </span>
+                <span class="d-block d-sm-none">12 </span>
+            </div>
+            <div class="col-sm">
+                <span class="d-none d-sm-block"> 4 </span>
+                <span class="d-block d-sm-none">12 </span>
+            </div>
+            <div class="col-sm">
+                <span class="d-none d-sm-block"> 4 </span>
+                <span class="d-block d-sm-none">12 </span>
+            </div>
+        </div>
+        <p> Dividimos la fila en tres columnas para todos los breakpoints</p>
+        <div class="row">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    
+        <p> Disponemos de 5 breakpoints y tambien se puede indicar las columnas que ocupan</p>
+        <div class="row mb-5">
+            <div class="col-xs-12 col-sm-4 col-lg-6">1 columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">2 columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">3 columna</div>
+        </div>
+
+        <h2>Alinacion vertical</h2>
+
+        <div class="row align-items-center" style="height: 300px;">
+            <div class="col">Columna</div>
+        </div>
+
+        <p> Ponemos al <code>div.row</code> un estilo en linea <code>style="height: 300px;"</code> para darle una altura minima </p>
+        <div class="row" style="min-height:10rem;">
+            <div class="col align-self-start"> Start</div>
+            <div class="col align-self-center"> Center</div>
+            <div class="col align-self-end"> End</div>
+        </div>
+
+
+        <h2> Ordenar </h2>
+        <p>en pantalla grande lo que es importante esta en medio y cuando es pequeño para a la parte de arriba del todo</p>
+        <p> Tenemos 6 divs en 2 columnas para PCs pero en movil queremos que la 5ª sea la 1ª</p>
+
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col bg-warning order-first order-sm-0">5</div>
+            <div class="col ">6</div>
+        </div>
+
+        <h2>Offset</h2>
+        <p> Queremos 3 columnas que ocupen 3 espacios pero de la segunda a la tercera debe quedar un hueco vacio. </p>
+
+        <div class="row">
+            <div class="col-3">1</div>
+            <div class="col-3">2</div>
+            <div class="col-3 offset-sm-3">3</div>
+        </div>
+    </main>
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

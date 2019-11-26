@@ -36,6 +36,11 @@ code {
     background-color: #333;
 }
 
+.descripcion .card {
+    background-color: #d9ebff;
+    border-color: #3c75b1;
+}
+
 h1 {
     color: teal;
 }
@@ -77,7 +82,7 @@ main:before {
 /* Clases
 ***************************************************************************************************************************/
 
-.col, .col-sm {
+.row > div[class^=col]{
     border: 1px solid #333;
     background-color: rgb(172, 172, 172);
     padding: 20px;

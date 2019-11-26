@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container descripcion">
         <h1> Utilidades </h1>
         <p>
             <pre>
@@ -135,8 +135,10 @@
             <div class="card-body container">
                 <p> Para meter videos de youtube y cosas del estilo que utilicen las etiquetas <code>iframe, embed, video o object</code> </p>
                 <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
-        </div>     
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                </div>
+            </div>
+        </div> 
         <div class="card mb-3">
             <div class="card-header text-center font-weight-bold">
                 <a href="https://getbootstrap.com/docs/4.3/utilities/position/"> Position </a>
@@ -148,8 +150,8 @@
                 <p><code>fixed-top</code>: le da el atributo <code>position: fixed;</code> y ademas le da la propiedad <code>top: 0; right: 0; left: 0;</code></p>
                 <p><code>fixed-bottom</code>: lo mismo que <code>fixed-top</code> pero con <code>bottom: 0;</code> (ejemplo: el footer) </p>
                 <p><code>sticky-top</code>: le da el atributo <code>position: sticky;</code> ademas de darle el atributo <code>top: 0;</code> (ejemplo: el navbar)</p>
-            </div>
-        </div>    
+            </div>   
+        </div>
         <div class="card mb-3">
             <div class="card-header text-center font-weight-bold">
                 <a href="https://getbootstrap.com/docs/4.3/utilities/shadows/"> Shadows </a>
@@ -164,12 +166,34 @@
         </div>
         <div class="card mb-3">
             <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/utilities/stretched-link/"> Stretched link</a>
+            </div>
+            <div class="card-body container">
+                <p> Hace que el componente en el que esta contenido actue como un link</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Carta con stretched link</h5>
+                                    <p class="card-text"> Algo de texto para rellenar la carta</p>
+                                    <a href="#" class="btn btn-primary stretched-link"> Ir a algun sitio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
                 Empty card
             </div>
             <div class="card-body container">
                 Just and empty card
             </div>
         </div>
+    
     </main>
     <footer class="bg-primary fixed-bottom">
         <div class="container p-1 p-sm-3 clearfix">
