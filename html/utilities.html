@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
         <!-- Custom css -->
@@ -23,7 +22,6 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -183,6 +181,103 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Carta con 2 links diferentes </h5>
+                                    <p class="card-text"> Un ejemplo con dos links de tipo stretched link</p>
+                                    <p class="card-text">
+                                        <a href="#" class="stretched-link text-danger" style="position: relative;"> Un stretched-link no funcionara aqui porque su posicion es relativa.</a>
+                                    </p>
+                                    <p class="card-text bg-light" style="transform: rotate(0);">
+                                        Esto <a href="#" class="text-warning stretched-link"> stretched link</a> solo se va a contagiar sobre la etiqueta <code>p</code> , porque se le ha aplicado una transformacion.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/utilities/text/"> Text </a>
+            </div>
+            <div class="card-body container">
+                <div class="card-body border border-primary mb-2">
+                    <h5> Text alignment</h5>
+                    <p> Se pueden poner diferente tipos de alineamiento del texto. Se puede aplicar especificamente a un viewport. ej: <code>text-sm-center</code> </p>
+                    <p class="text-left"> Estoy alineado a la izquierda</p>
+                    <p class="text-center">Estoy alineado al centro</p>
+                    <p class="text-right"> Estoy alineado a la derecha</p>
+                </div>
+                <div class="card-body border border-primary mb-2">
+                    <h5> Text wrapping y overflow</h5>
+                    <p> Para que el texto no se salga del contenedor ni lo deforme se usa la clase <code>text-wrapper</code></p>
+                    
+                    <div class="badge badge-primary text-wrap" style="width: 6rem;">
+                        Este texto se adapta bastante bien a su contenedor
+                    </div>
+                    <hr>
+                    <p> Tambien se puede utilizar la clase <code>text-nowrap</code> para que forzar que los elementos no se adapten</p>
+                    <div class="text-nowrap bg-danger" style="width: 8rem;">
+                        Este texto debe sobresalir del padre
+                    </div>
+                    <hr>
+                    <p> Para texto más largo se puede truncar el contenido añadiendo la clase <code>text-truncate</code> para truncar el texto y poner <code>...</code>. <b>Requiere</b> <code>display: inline-block o display: block;</code>  </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2 text-truncate">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, dolor!
+                            </div>
+                        </div>
+                    </div>
+                    <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, id!
+                    </span>
+                </div>
+                <div class="card-body border border-primary mb-2">
+                    <h5> Word break </h5>
+                    <p> Para prevenir que textos largos rompan la estructura de tus componentes se pone al clase <code>text-break</code>.</p>
+                    <p class="text-break">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+                <div class="card-body border border-primary mb-2">
+                    <h5> Text tranform </h5>
+                    <p> Sirve para transformar el texto de los componentes. <p>
+                    <p class="text-lowercase">Lorem, ipsum dolor.</p>
+                    <p class="text-uppercase">Quis, fuga minus.</p>
+                    <p class="text-capitalize">Quia, minima neque.</p>
+                </div>
+                <div class="card-body border border-primary mb-2">
+                    <h5> Font weight and italics</h5>
+                    <p> Sirve para cambiar rapidamente el grosor de las letras o italizarlas </p>
+                    <p class="font-weight-bold">Lorem, ipsum dolor.</p>
+                    <p class="font-weight-bolder">Nemo, tenetur quia!</p>
+                    <p class="font-weight-normal">Ipsum, dignissimos repudiandae.</p>
+                    <p class="font-weight-light">Expedita, itaque velit?</p>
+                    <p class="font-weight-lighter">In, perferendis debitis!</p>
+                    <p class="font-italic">Neque, voluptatem maxime.</p>
+                </div>
+                
+                <div class="card-body border border-primary mb-2">
+                    <h5> Monospace </h5>7
+                    <p><code>text-monospace</code></p>
+                    <p class="text-monospace">Lorem ipsum dolor sit.</p>
+                </div>
+                
+                <div class="card-body border border-primary mb-2">
+                    <h5> Reset color </h5>
+                    <p> Resetea el color del hijo haciendo que herede el color que tenga el padre <code>text-reset</code> </p>
+                    <div class="text-warning">
+                        <a href="#" class="text-reset">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                
+                <div class="card-body border border-primary mb-2">
+                    <h5> Text decoration </h5>
+                    <p> Para quitar la decoracion que tenga asignado un componente <code>text-decoration-none</code> </p>
+                    <a href="#" class="text-decoration-none">Lorem ipsum dolor sit.</p>
                 </div>
             </div>
         </div>
@@ -194,7 +289,6 @@
                 Just and empty card
             </div>
         </div>
-    
     </main>
     <footer class="bg-primary fixed-bottom">
         <div class="container p-1 p-sm-3 clearfix">
