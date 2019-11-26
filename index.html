@@ -16,32 +16,27 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top ">
-        <a class="navbar-brand" href="/index.html">Indice</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/html/gridsystem.html"> Grid System </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html/components.html"> Componentes </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html/utilities.html"> Utilidades </a>
-            </li>
-            </ul>
-        </div>
-    </nav>
-    <nav>
-        <ul>
-            <li><a href="html/gridsystem.html"> Grid</a></li>
-            <li><a href="html/components.html"> componentes</a></li>
-            <li><a href="html/utilities.html"> Utilidades</a></li>
-        </ul>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Indice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/gridsystem.html"> Grid System </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/components.html"> Componentes </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/utilities.html"> Utilidades </a>
+                </li>
+                </ul>
+            </div> <!-- .collapse .navbar-collapse -->
+        </div> <!-- .container-->
     </nav>
 
     <main class="container">
@@ -105,11 +100,19 @@
             </div>
     </main>
 
-    <footer class="fixed-bottom bg-primary p-1 p-sm-4">
-        <div class="container">
-            <a target="_blank" href="https://github.com/JosebaMerino/Bootstrap4"    ><i class="fab fa-github"></i> GitHub</a>
+    <footer class="bg-primary fixed-bottom">
+            <div class="container p-1 p-sm-3 clearfix">
+            <nav>
+                    <ul class="d-flex flex-column flex-sm-row justify-content-between p-0">
+                        <li class="text-center"><a href="#">Enlace</a></li>
+                        <li class="text-center"><a href="#">Enlace</a></li>
+                        <li class="text-center"><a href="#">Enlace</a></li>
+                        <li class="text-center"><a href="#">Enlace</a></li>
+                    </ul>
+            </nav>
+            <a class="float-right" target="_blank" href="https://github.com/JosebaMerino/Bootstrap4"><i class="fab fa-github"></i> GitHub</a>
         </div>
-    </footer>
+        </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
