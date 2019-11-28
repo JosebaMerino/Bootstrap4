@@ -114,6 +114,61 @@
                 </div>
             </div>
         </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/components/buttons/"> Button </a>
+            </div>
+            <div class="card-body container">
+                <p> Simplemente botones que tienen un estilo bastante diferente a los comunes</p>
+                <div>
+                    <button class="btn btn-primary"> Button </button>
+                    <button class="btn btn-secondary"> Button </button>
+                    <button class="btn btn-success"> Button </button>
+                    <button class="btn btn-danger"> Button </button>
+                    <button class="btn btn-warning"> Button </button>
+                    <button class="btn btn-info"> Button </button>
+                    <button class="btn btn-light"> Button </button>
+                    <button class="btn btn-dark"> Button </button>
+                    <button class="btn btn-link"> Link </button>
+                </div>
+                <p>La clase <code>btn</code> se le puede aplicar a otros elementos que no sean <code>button</code> como por ejepmlo <code>a e input</code></p>
+                <div>
+                    <a href="#" class="btn btn-primary"> Link </a>
+                    <button class="btn btn-primary" type="submit"> Button </button>
+                    <input type="button" class="btn btn-primary" value="Input">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <input type="reset" class="btn btn-primary" value="Reset">
+                </div>
+                <p> Los botones tambien puede tener un estilo diferente llamado <code>outline</code>. Y viene uno para cada color.</p>
+                <div>
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+                <p> Tambien se le puede cambiar el tamaño de los botones. Tienen dos tamaños a parte del original: <code> btn-lg y btn-sm </code></p>
+                <div>
+                    <button class="btn btn-primary btn-lg"> Boton grande </button>
+                    <button class="btn btn-primary"> Boton normal</button>
+                    <button class="btn btn-primary btn-sm"> Boton pequeño</button>
+                </div>
+
+                <p> Se puede hacer que los botones ocupen todo el ancho del padre con la clase <code>btn-block</code></p>
+                <div>
+                    <button class="btn btn-primary btn-block"> Boton anchisimo</button>
+                </div>
+                
+                <p> Los botones pueden tener dos estados: activos o inactivos. Por defecto se encuentran en estado activo pero si queremos cambiar el estado, bastaria con aplicar el atributo <code>disabled</code> para deshabilitarlo. Si de lo contrario se desea habilitar, se usará la clase <code>active</code></p>
+                <div>
+                    <button class="btn btn-primary active"> Boton activo</button>
+                    <button class="btn btn-primary" disabled> Boton deshabilitado</button>
+                </div>
+                
+            </div>
         </div>
         <div class="card mb-3">
             <div class="card-header text-center font-weight-bold">
@@ -124,7 +179,6 @@
             </div>
         </div>
         <pre>
-        breadcrumb?
         buttons?
         button group?
         card?
