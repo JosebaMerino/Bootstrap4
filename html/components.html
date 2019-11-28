@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
     <!-- Custom css -->
     <link rel="stylesheet" href="/css/styles.css">
     <title>Bootstrap4</title>
 </head>
-    <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg  sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/index.html">Indice</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +38,21 @@
     <main class="container">
         <h2> Componentes</h2>
 
-        <div class="container p-3 mb-3">
-            <h3> Alertas</h3>
+
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/components/alerts/">Alertas</a>
+            </div>
+            <div class="card-body container">
+                <p> Las alertas sirven para mostrar información sobre sucesos. Dentro de una alerta se puede maquetar lo que se quiera.</p>
             <div class="alert alert-primary" role="alert">
-                    Esto es una alerta de color azul
+                    Esto es una alerta de color primario
             </div>
             <div class="alert alert-danger" role="alert">
                     Esto es una alerta de color rojo
+            </div>
+            <div class="alert alert-info" role="alert">
+                Esto es una alerta de color secundario que ademas tiene un <a href="" class="alert-link">anchor</a> que cambia de color dependiendo del alert en el que se contenga.
             </div>
         
 
@@ -54,7 +62,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            </div>
         </div>
+
 
         <div class="container p-3 mb-3">
             <h3>badge</h3>
@@ -64,7 +74,7 @@
                 Notificaciones <span class="badge badge-light">4</span>
             </button>
         </div>
-
+        <pre>
         breadcrumb?
         buttons?
         button group?
@@ -90,10 +100,10 @@
         https://getbootstrap.com/docs/4.3/getting-started/introduction/
 
         carpeta vendor son cosas de terceros
-
+    </pre>
     </main>
 
-    <footer class="bg-primary fixed-bottom">
+    <footer class="bg-primary fixed-bottom invisible" >
         <div class="container p-1 p-sm-3 clearfix">
             <nav>
                     <ul class="d-flex flex-column flex-sm-row justify-content-between p-0">
