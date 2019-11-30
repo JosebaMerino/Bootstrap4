@@ -172,6 +172,77 @@
         </div>
         <div class="card mb-3">
             <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/components/button-group/"> Button group</a>
+            </div>
+            <div class="card-body container">
+                <p> Agrupa una serie de botones juntos en una sola linea y se le pueden dar superpoderes con javascript</p>
+                <div>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-secondary" type="button">Lorem.</button>
+                        <button class="btn btn-secondary" type="button">Lorem.</button>
+                        <button class="btn btn-secondary" type="button">Lorem.</button>
+                    </div>
+                </div>
+                <p>Se pueden juntar los botones normales con dropdowns</p>
+                <div>
+                    <div class="btn-group" role="group" >
+                        <button type="button" class="btn btn-secondary"> 1 </button>
+                        <button type="button" class="btn btn-secondary"> 2 </button>
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p> Para hacer que los botones se muestren verticalmente basta con poner <code>btn-group-vertical</code> en vez de <code>btn-group</code></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
+                <a href="https://getbootstrap.com/docs/4.3/components/card/"> Card</a>
+            </div>
+            <div class="card-body container">
+                <p> Son contenedores con multiples variantes y opciones </p>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="http://lorempixel.com/300/200/" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"> Titulo de card</h5>
+                            <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, ex.</p>
+                            <a href="#" class="btn btn-primary"> Ir a algun sitio</a>
+                        </div>
+                    </div>
+                </div>
+                <h3> Tipos de contenido </h3>
+                <h4> Body </h4>
+                <p> El bloque de contruccion de una <code>card</code> es <code>card-body</code>. En ese sitio es donde se pone todo lo que se quiera y ademas se pone con un padding en la carta </p>
+                <div class="card">
+                    <div class="card-body">
+                        Algo de texto que esta dentro de una card
+                    </div>
+                </div>
+
+                <h4> Titles, text and links </h4>
+                <p> Los titulos de dentro de una carta se ponen usando la clase <code>card-title</code> al igual que los links se ponen usando <code>card-link</code> en una entiqueta anchor</p>
+                <p> Los subtitulos se añaden poniendo la clase <code>card-subtitle</code> a una etiqueta <code>h</code>. Si un <code>card-title</code> y un <code>card-subtitle</code> se colocan dentro se un <code>card-body</code> se alinean.</p>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"> Titulo de la carta</h5>
+                        <h6 class="card-subtitle"> Subtitulo de la carta</h6>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+                        <a href="#" class="card-link">Un link</a>
+                        <a href="#" class="card-link">Otro link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header text-center font-weight-bold">
                 Empty card
             </div>
             <div class="card-body container">
@@ -179,8 +250,6 @@
             </div>
         </div>
         <pre>
-        buttons?
-        button group?
         card?
         carousel?
         collapse?
